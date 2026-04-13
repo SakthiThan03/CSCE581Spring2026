@@ -1,0 +1,9 @@
+Classification of U.S. Voter FAQ Sources with Explainability
+
+This project focuses on classifying voter FAQ text from all 50 U.S. states into either primary sources (official state election websites) or secondary sources (Vote411). The dataset was obtained from GitHub and consists of JSON files for each state containing questions, answers, and a source field. For preprocessing, the question and answer were combined into a single text field, and labels were assigned based on the source: entries containing “vote411” were labeled as secondary (1), while all others were labeled as primary (0). The final combined dataset was saved as 'us-allstates-voter-faqs.csv'.
+
+The dataset was split into 80% training and 20% testing. Text was vectorized using TF-IDF to convert it into numerical features. Two models were trained: Logistic Regression and a calibrated Linear SVM. These models were evaluated using F1 score and ROC AUC, with the best-performing model selected based on these metrics.
+
+To interpret model predictions, LIME was used to identify the most important words influencing each classification. Two examples per state (one primary and one secondary when available) were selected, resulting in approximately 100 samples. For each example, the predicted class, true class, and top contributing features were recorded in a CSV file, and detailed explanations were saved in a PDF.
+
+The results showed that primary sources tend to use formal, procedural language, while secondary sources use more conversational phrasing. Overall, the models performed well, and LIME provided clear insight into how predictions were made, improving transparency and understanding of the classification process.

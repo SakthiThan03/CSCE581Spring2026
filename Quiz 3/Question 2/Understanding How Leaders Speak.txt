@@ -1,0 +1,9 @@
+Understanding How Leaders Speak
+
+For this analysis, five U.S. presidents were selected based on 50-year intervals starting from 1776. The presidents chosen were George Washington (1789) for I1, Andrew Jackson (1829) for I2, William McKinley (1897) for I3, John F. Kennedy (1961) for I4, and Donald Trump (2025) for I5. These selections ensure a broad temporal coverage of presidential inaugural addresses across U.S. history.
+
+To analyze how leaders speak, sentiment analysis was performed using two different methods: VADER and TextBlob. Both methods assign polarity scores to text, where positive values indicate positive sentiment and negative values indicate negative sentiment. The results were visualized using a bar graph, showing the sentiment scores for each president across both methods. Additionally, word clouds were generated for each inaugural address to highlight the most frequently used words and themes in each speech.
+
+From the sentiment analysis results, it was observed that the two methods did not always produce identical values, although they often showed similar overall trends. In some cases, both methods agreed on whether a speech was generally positive or neutral, but the magnitude of the sentiment differed. This difference arises because VADER is specifically designed for social and general-purpose text with emphasis on intensity, while TextBlob relies on a more traditional lexicon-based approach.
+
+Based on the word clouds and sentiment scores, John F. Kennedy’s inaugural address was the most interesting. His speech contained strong and impactful language centered around themes such as freedom, responsibility, and unity. The word cloud highlighted frequently used terms related to national purpose and global cooperation, while the sentiment analysis reflected a balanced yet optimistic tone. This combination made the speech stand out as both emotionally engaging and rhetorically powerful compared to the others.
